@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Android Development (Java)</title>
+  <link rel="stylesheet" href="../../assets/blog-details.css" />
+</head>
+<div>
+  <div class="top-bar">
+  <div class="top-center">Software Training Institute Website</div>
+
+  <div class="top-right">
+  <div class="help-menu">
+  <button class="help-btn" id="helpToggle">?</button>
+
+  <div class="help-dropdown" id="helpDropdown">
+    <a href="#">Help Center</a>
+    <a href="#">YouTube videos</a>
+    <a href="#">Release notes</a>
+    <a href="#">Legal summary</a>
+    <a href="#">Report abuse</a>
+    <div class="divider"></div>
+    <a href="#">Change language…</a>
+  </div>
+</div>
+    <button class="top-btn outline">Sign up with email</button>
+<button class="top-btn google">
+  <span class="google-icon">
+    <svg width="16" height="16" viewBox="0 0 48 48">
+      <path fill="#EA4335" d="M24 9.5c3.54 0 6.72 1.22 9.22 3.22l6.9-6.9C35.9 2.34 30.4 0 24 0 14.62 0 6.6 5.38 2.7 13.22l8.04 6.24C12.74 13.36 17.9 9.5 24 9.5z"/>
+      <path fill="#4285F4" d="M46.1 24.5c0-1.54-.14-3.02-.4-4.46H24v8.44h12.44c-.54 2.86-2.14 5.28-4.58 6.9l7.04 5.46C43.12 36.94 46.1 31.2 46.1 24.5z"/>
+      <path fill="#FBBC05" d="M10.74 28.46c-.48-1.42-.76-2.94-.76-4.46s.28-3.04.76-4.46L2.7 13.22C.98 16.62 0 20.26 0 24s.98 7.38 2.7 10.78l8.04-6.32z"/>
+      <path fill="#34A853" d="M24 48c6.4 0 11.8-2.12 15.74-5.76l-7.04-5.46c-1.96 1.32-4.48 2.1-8.7 2.1-6.1 0-11.26-3.86-13.26-9.14l-8.04 6.32C6.6 42.62 14.62 48 24 48z"/>
+    </svg>
+  </span>
+  Continue with Google
+</button>
+  </div>
+</div>
+
+<header class="navbar">
+  <div class="nav-left">
+    <div class="logo-box">ST</div>
+    <span class="brand-name">SoftTech Institute</span>
+  </div>
+  <nav class="nav-links">
+    <a href="../../index.html">Home</a>
+    <a href="../../pages/programs.html">Programs</a>
+    <a href="../../pages/blog.html">Blog</a>
+    <a href="../../pages/about.html">About Us</a>
+    <a href="../../pages/contact.html">Contact Us</a>
+  </nav>
+</header>
+
+<section class="course-wrapper">
+
+  <!-- Back Button -->
+  <a href="../../pages/programs.html" class="back-btn">← Back to Programs</a>
+
+  <!-- Hero -->
+  <div class="course-hero">
+    <div class="course-info">
+      <span class="badge">Beginner to Intermediate</span>
+      <span class="badge light">Mobile Development</span>
+
+      <h1>Android Development (Java)</h1>
+      <p>
+        Master Android app development using Java and XML layouts.
+        Learn to build scalable and production-ready apps.
+      </p>
+
+      <div class="meta">
+        <span>⏱ 4 Months</span>
+        <span>📊 Beginner to Intermediate</span>
+      </div>
+    </div>
+
+    <img src="data:image/jpeg;base64,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" alt="Android Development">
+  </div>
+
+  <!-- Content Grid -->
+  <div class="course-grid">
+
+    <!-- LEFT CONTENT -->
+    <div class="course-content">
+      
+    <div class="card">
+        <h3><ion-icon name="book-outline"></ion-icon> Prerequisites</h3>
+      <p>Basic programming knowledge</p>
+    </div>
+
+      <div class="card">
+  <h3><ion-icon name="radio-button-on-outline"></ion-icon> Course Syllabus</h3>
+  <p class="card-subtitle">
+    What you'll learn in this comprehensive program
+  </p>
+
+  <div class="syllabus-grid">
+
+    <div class="syllabus-item">
+      <span class="check-icon">✔</span>
+      <span>Compose Fundamentals</span>
+    </div>
+
+    <div class="syllabus-item">
+      <span class="check-icon">✔</span>
+      <span>State Management</span>
+    </div>
+
+    <div class="syllabus-item">
+      <span class="check-icon">✔</span>
+      <span>Navigation Component</span>
+    </div>
+
+    <div class="syllabus-item">
+      <span class="check-icon">✔</span>
+      <span>Custom Composables</span>
+    </div>
+
+    <div class="syllabus-item">
+      <span class="check-icon">✔</span>
+      <span>Animation & Theming</span>
+    </div>
+
+    <div class="syllabus-item">
+      <span class="check-icon">✔</span>
+      <span>Compose Testing</span>
+    </div>
+
+    <div class="syllabus-item">
+      <span class="check-icon">✔</span>
+      <span>Integration with ViewSystem</span>
+    </div>
+
+    <div class="syllabus-item">
+      <span class="check-icon">✔</span>
+      <span>Performance Optimization</span>
+    </div>
+
+  </div>
+</div>
+
+
+      <div class="card">
+  <h3 class="card-title">Hands-on Projects</h3>
+  <p class="card-subtitle">Real-world projects you'll build during the course</p>
+
+  <div class="project-item">
+    <span class="project-number">1</span>
+    <div>
+      <h4>Todo List Application</h4>
+      <p>Practical implementation of course concepts</p>
+    </div>
+  </div>
+
+  <div class="project-item">
+    <span class="project-number">2</span>
+    <div>
+      <h4>Weather App with API Integration</h4>
+      <p>Practical implementation of course concepts</p>
+    </div>
+  </div>
+
+  <div class="project-item">
+    <span class="project-number">3</span>
+    <div>
+      <h4>E-commerce Mobile App</h4>
+      <p>Practical implementation of course concepts</p>
+    </div>
+  </div>
+
+  <div class="project-item">
+    <span class="project-number">4</span>
+    <div>
+      <h4>Social Media Clone</h4>
+      <p>Practical implementation of course concepts</p>
+    </div>
+  </div>
+</div>
+<!---------------Learning journey------------------>
+<div class="card">
+  <h3>Learning Journey</h3>
+  <p class="journey-subtitle">Your path from beginner to professional</p>
+
+  <div class="learning-journey">
+
+    <div class="journey-step">
+      <div class="step-circle blue">1</div>
+      <h4>Foundation</h4>
+      <p>Learn core concepts and fundamentals</p>
+    </div>
+
+    <div class="journey-step">
+      <div class="step-circle orange">2</div>
+      <h4>Practice</h4>
+      <p>Build projects and apply knowledge</p>
+    </div>
+
+    <div class="journey-step">
+      <div class="step-circle green">3</div>
+      <h4>Master</h4>
+      <p>Become industry-ready professional</p>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+
+    <!-- RIGHT SIDEBAR (STICKY) -->
+<aside class="sidebar">
+
+    <div class="sidebar-box sticky">
+      <h3>Enroll in this Course</h3>
+      <p class="muted">Start your journey in android development (java)</p>
+
+      <button class="btn primary">Enroll Now</button>
+      <button class="btn out">Free Consultation</button>
+
+      <div class="info">
+        <p><strong>Duration:</strong> 4 Months</p>
+        <p><strong>Format:</strong> Online + Practical</p>
+        <p><strong>Certificate:</strong> Yes</p>
+      </div>
+    </div>
+
+    <div class="sidebar-box">
+      <h3>Course Features</h3>
+      <ul>
+        <li>✔ Industry Expert Instructors</li>
+        <li>✔ Hands-on Projects</li>
+        <li>✔ Career Support</li>
+        <li>✔ Certificate of Completion</li>
+        <li>✔ Lifetime Access</li>
+        <li>✔ 24/7 Support</li>
+      </ul>
+    </div>
+
+    <div class="sidebar-box">
+      <h3>Need More Information?</h3>
+      <p class="muted">Get in touch with our counselors</p>
+      <button class="btn out">Schedule Call</button>
+      <button class="btn out">Download Brochure</button>
+    </div>
+
+  </aside>
+
+  </div>
+</section>
+<!-- ================= FOOTER ================= -->
+ <footer class="footer">
+  <div class="footer-top">
+
+    <!-- About -->
+    <div class="footer-col">
+      <div class="footer-logo">
+        <span class="logo-box">ST</span>
+        <span class="brand-name">SoftTech Institute</span>
+      </div>
+
+      <p class="footer-text">
+        Empowering the next generation of software developers with
+        world-class training and industry-ready skills since 2021.
+      </p>
+
+      <ul class="footer-contact">
+  <li>
+    <ion-icon name="location-outline"></ion-icon>
+    <span>123 Tech Street, Bangalore 560001</span>
+  </li>
+  <li>
+    <ion-icon name="call-outline"></ion-icon>
+    <span>+91 98765 43210</span>
+  </li>
+  <li>
+    <ion-icon name="mail-outline"></ion-icon>
+    <span>info@softtech-institute.com</span>
+  </li>
+</ul>
+    </div>
+    <!-- Quick Links -->
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <a href="#">Home</a>
+      <a href="#">Programs</a>
+      <a href="#">About Us</a>
+      <a href="#">Blog</a>
+      <a href="#">Contact</a>
+      <a href="#">Career Services</a>
+    </div>
+
+    <!-- Popular Courses -->
+    <div class="footer-col">
+      <h4>Popular Courses</h4>
+      <a href="#">ReactJS Development</a>
+      <a href="#">Flutter Development</a>
+      <a href="#">MERN Stack</a>
+      <a href="#">Android Development</a>
+      <a href="#">Python Programming</a>
+      <a href="#">iOS Development</a>
+    </div>
+
+    <!-- Student Resources -->
+    <div class="footer-col">
+      <h4>Student Resources</h4>
+      <a href="#">Course Catalog</a>
+      <a href="#">Student Portal</a>
+      <a href="#">Study Materials</a>
+      <a href="#">Project Gallery</a>
+      <a href="#">Certification</a>
+      <a href="#">Alumni Network</a>
+    </div>
+
+  </div>
+
+  <!-- Newsletter -->
+  <div class="footer-newsletter">
+    <h4>Stay Updated</h4>
+    <p>Subscribe to our newsletter for the latest course updates and tech insights.</p>
+    <div class="newsletter-box">
+      <input type="email" placeholder="Enter your email">
+      <button>Subscribe</button>
+    </div>
+  </div>
+
+  <!-- Bottom -->
+   <div class="footer-bottom">
+   <div class="icons">
+    Follow Us
+    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+    <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+    <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+   </div>
+     <div class="copyright">
+      © 2026 SoftTech Institute. All rights reserved.
+      <a href="#">Privacy Policy</a> ·
+      <a href="#">Terms of Service</a> ·
+      <a href="#">Cookie Policy</a>
+    </div>
+  </div>
+</footer>
+</div>
+<script src="../../assets/../../assets/main.js"></script>
+  <!-- Ionicons -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>x
+
+</body>
+</html>

@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Programs | SoftTech Institute</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+  <link rel="stylesheet" href="../assets/style.css"/>
+</head>
+<div>
+  <div class="top-bar">
+  <div class="top-center">Software Training Institute Website</div>
+
+  <div class="top-right">
+  <div class="help-menu">
+  <button class="help-btn" id="helpToggle">?</button>
+
+  <div class="help-dropdown" id="helpDropdown">
+    <a href="#">Help Center</a>
+    <a href="#">YouTube videos</a>
+    <a href="#">Release notes</a>
+    <a href="#">Legal summary</a>
+    <a href="#">Report abuse</a>
+    <div class="divider"></div>
+    <a href="#">Change language…</a>
+  </div>
+</div>
+    <button class="top-btn outline">Sign up with email</button>
+<button class="top-btn google">
+  <span class="google-icon">
+    <svg width="16" height="16" viewBox="0 0 48 48">
+      <path fill="#EA4335" d="M24 9.5c3.54 0 6.72 1.22 9.22 3.22l6.9-6.9C35.9 2.34 30.4 0 24 0 14.62 0 6.6 5.38 2.7 13.22l8.04 6.24C12.74 13.36 17.9 9.5 24 9.5z"/>
+      <path fill="#4285F4" d="M46.1 24.5c0-1.54-.14-3.02-.4-4.46H24v8.44h12.44c-.54 2.86-2.14 5.28-4.58 6.9l7.04 5.46C43.12 36.94 46.1 31.2 46.1 24.5z"/>
+      <path fill="#FBBC05" d="M10.74 28.46c-.48-1.42-.76-2.94-.76-4.46s.28-3.04.76-4.46L2.7 13.22C.98 16.62 0 20.26 0 24s.98 7.38 2.7 10.78l8.04-6.32z"/>
+      <path fill="#34A853" d="M24 48c6.4 0 11.8-2.12 15.74-5.76l-7.04-5.46c-1.96 1.32-4.48 2.1-8.7 2.1-6.1 0-11.26-3.86-13.26-9.14l-8.04 6.32C6.6 42.62 14.62 48 24 48z"/>
+    </svg>
+  </span>
+  Continue with Google
+</button>
+  </div>
+</div>
+  <!-- Navbar -->
+<header class="navbar">
+  <div class="nav-left">
+    <div class="logo-box">ST</div>
+    <span class="brand-name">SoftTech Institute</span>
+  </div>
+
+  <nav class="nav-links">
+  <a href="../index.html" id="homeBtn">Home</a>
+  <a href="./programs.html" id="programsBtn" class="active">Programs</a>
+  <a href="./blog.html" id="blogBtn">Blog</a>
+  <a href="./about.html" id="aboutBtn">About Us</a>
+  <a href="./contact.html" id="contactBtn">Contact Us</a>
+  </nav>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="program-hero">
+  <h1>Our Training Programs</h1>
+  <p>
+    Comprehensive courses designed to make you industry-ready<br>
+    Professional training from beginner to advanced level
+  </p>
+
+  <div class="hero-box">
+    <div class="hero-text">
+  <span class="tag" id="heroTag">All Courses</span>
+  <h2 id="heroTitle">Explore All Our Programs</h2>
+  <p id="heroDesc">
+    Discover our comprehensive range of software development courses
+    designed for every skill level.
+  </p>
+</div>
+
+
+    <div class="hero-image">
+      <img src="../images/laptop.jpg" alt="program image">
+    </div>
+  </div>
+</section>
+
+<!-- ================= FILTERS ================= -->
+<section class="filters">
+  <button class="filter active" data-filter="all">
+    <i class="fa-solid fa-layer-group"></i>
+    All Courses
+  </button>
+
+  <button class="filter" data-filter="mobile">
+    <i class="fa-solid fa-mobile-screen-button"></i>
+    Mobile Development
+  </button>
+
+  <button class="filter" data-filter="web">
+<i class="fa-solid fa-globe"></i>
+    Web Development
+  </button>
+
+  <button class="filter" data-filter="backend">
+    <i class="fa-solid fa-server"></i>
+    Backend Development
+  </button>
+</section>
+
+
+<!-- ================= PROGRAM CARDS ================= -->
+<section class="programs">
+  <!-- ===== Mobile Development Programs ===== -->
+<div class="programs-group">
+
+  <div class="programs-grid">
+
+    <!-- Card 1 -->
+<div class="program-card" data-category="mobile">
+      <img src="../images/mobile.jpg" alt="Android Java">
+      <div class="program-content">
+        <span class="level beginner">Beginner</span>
+        <h3>Android Development (Java)</h3>
+        <p>Build native Android apps with Java and XML</p>
+ <div class="program-meta">
+
+  <div class="meta-left">
+    <div class="duration-line">
+      <span class="label">Duration:</span>
+      <span class="months">4 Months</span>
+    </div>
+    <div class="category">Mobile Development</div>
+  </div>
+
+  <a href="./courses/index-android.html" class="details-btn">
+    View Details →
+  </a>
+
+</div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+<div class="program-card" data-category="mobile">
+      <img src="../images/mobile.jpg" alt="Android Kotlin">
+      <div class="program-content">
+        <span class="level beginner">Beginner</span>
+        <h3>Android Development (Kotlin)</h3>
+        <p>Modern Android development with Kotlin</p>
+ <div class="program-meta">
+
+  <div class="meta-left">
+    <div class="duration-line">
+      <span class="label">Duration:</span>
+      <span class="months">4 Months</span>
+    </div>
+    <div class="category">Mobile Development</div>
+  </div>
+
+  <a href="./courses/index-kotlin.html" class="details-btn">
+    View Details →
+  </a>
+
+</div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+<div class="program-card" data-category="mobile">
+      <img src="../images/mobile.jpg" alt="Jetpack Compose">
+      <div class="program-content">
+        <span class="level intermediate">Intermediate</span>
+        <h3>Android Jetpack Compose</h3>
+        <p>Modern UI toolkit for native Android</p>
+
+         <div class="program-meta">
+
+  <div class="meta-left">
+    <div class="duration-line">
+      <span class="label">Duration:</span>
+      <span class="months">4 Months</span>
+    </div>
+    <div class="category">Mobile Development</div>
+  </div>
+
+  <a href="./courses/index-jetpack.html" class="details-btn">
+    View Details →
+  </a>
+
+</div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+<div class="program-card" data-category="mobile">
+      <img src="../images/mobile.jpg" alt="iOS Swift">
+      <div class="program-content">
+        <span class="level beginner">Beginner</span>
+        <h3>iOS Development (SwiftUI)</h3>
+        <p>Build iOS apps with Swift and SwiftUI</p>
+
+        <div class="program-meta">
+
+  <div class="meta-left">
+    <div class="duration-line">
+      <span class="label">Duration:</span>
+      <span class="months">4 Months</span>
+    </div>
+    <div class="category">Mobile Development</div>
+  </div>
+
+  <a href="./courses/index-ios.html" class="details-btn">
+    View Details →
+  </a>
+
+</div>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="program-card" data-category="mobile">
+      <img src="../images/mobile.jpg" alt="Flutter">
+      <div class="program-content">
+        <span class="level beginner">Beginner</span>
+        <h3>Flutter Development</h3>
+        <p>Cross-platform apps with Flutter & Dart</p>
+
+    <div class="program-meta">
+  <div class="meta-left">
+    <div class="duration-line">
+      <span class="label">Duration:</span>
+      <span class="months">4 Months</span>
+    </div>
+    <div class="category">Mobile Development</div>
+  </div>
+  <a href="./courses/index-flutter.html" class="details-btn">
+    View Details →
+  </a>
+
+</div>
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="program-card" data-category="mobile">
+      <img src="../images/mobile.jpg" alt="React Native">
+      <div class="program-content">
+        <span class="level intermediate">Intermediate</span>
+        <h3>React Native Development</h3>
+        <p>Cross-platform mobile apps with React Native</p>
+
+  <div class="program-meta">
+
+  <div class="meta-left">
+    <div class="duration-line">
+      <span class="label">Duration:</span>
+      <span class="months">4 Months</span>
+    </div>
+    <div class="category">Mobile Development</div>
+  </div>
+
+  <a href="./courses/index-react.html" class="details-btn">
+    View Details →
+  </a>
+
+</div>
+
+      </div>
+    </div>
+
+
+    <!-- CARD -->
+<div class="program-card" data-category="web">
+      <img src="../images/code.jpg">
+      <div class="program-content">
+        <span class="level beginner">Beginner</span>
+        <h4>Web Development Fundamentals</h4>
+        <p>HTML, CSS, and JavaScript basics</p>
+         <div class="program-meta">
+
+  <div class="meta-left">
+    <div class="duration-line">
+      <span class="label">Duration:</span>
+      <span class="months">4 Months</span>
+    </div>
+    <div class="category">Web Development</div>
+  </div>
+
+  <a href="./courses/index-web.html" class="details-btn">
+    View Details →
+  </a>
+
+</div>
+      </div>
+    </div>
+
+<div class="program-card" data-category="web">
+      <img src="../images/code.jpg">
+      <div class="program-content">
+        <span class="level intermediate">Intermediate</span>
+        <h4>React.js Development</h4>
+        <p>Modern frontend development with React</p>
+         <div class="program-meta">
+  <div class="meta-left">
+    <div class="duration-line">
+      <span class="label">Duration:</span>
+      <span class="months">4 Months</span>
+    </div>
+    <div class="category">Web Development</div>
+  </div>
+
+  <a href="./courses/react-development.html" class="details-btn">
+    View Details →
+  </a>
+
+</div>
+      </div>
+    </div>
+
+    <div class="program-card" data-category="web">
+      <img src="../images/code.jpg">
+      <div class="program-content">
+        <span class="level advanced">Advanced</span>
+        <h4>MERN Stack Development</h4>
+        <p>MongoDB, Express, React, Node.js</p>
+                <div class="program-meta">
+  <div class="meta-left">
+    <div class="duration-line">
+      <span class="label">Duration:</span>
+      <span class="months">4 Months</span>
+    </div>
+    <div class="category">Web Development</div>
+  </div>
+
+  <a href="./courses/python-mern.html" class="details-btn">
+    View Details →
+  </a>
+
+</div>
+      </div>
+    </div>
+
+<div class="program-card" data-category="backend">
+      <img src="../images/codes.jpg">
+      <div class="program-content">
+        <span class="level beginner">Beginner</span>
+        <h4>Python Programming</h4>
+        <p>Python for web development & automation</p>
+                <div class="program-meta">
+  <div class="meta-left">
+    <div class="duration-line">
+      <span class="label">Duration:</span>
+      <span class="months">4 Months</span>
+    </div>
+    <div class="category">Web Development</div>
+  </div>
+
+  <a href="./courses/python-advanced.html" class="details-btn">
+    View Details →
+  </a>
+
+</div>
+      </div>
+    </div>
+
+<div class="program-card" data-category="backend">
+      <img src="../images/codes.jpg">
+      <div class="program-content">
+        <span class="level intermediate">Intermediate</span>
+        <h4>Python with Flask</h4>
+        <p>Web development using Flask</p>
+                <div class="program-meta">
+  <div class="meta-left">
+    <div class="duration-line">
+      <span class="label">Duration:</span>
+      <span class="months">4 Months</span>
+    </div>
+    <div class="category">Web Development</div>
+  </div>
+
+  <a href="./courses/python-flask.html" class="details-btn">
+    View Details →
+  </a>
+
+</div>
+      </div>
+    </div>
+
+<div class="program-card" data-category="backend">
+      <img src="../images/codes.jpg">
+      <div class="program-content">
+        <span class="level advanced">Advanced</span>
+        <h4>Python Full Stack</h4>
+        <p>Django, APIs, Frontend integration</p>
+                <div class="program-meta">
+  <div class="meta-left">
+    <div class="duration-line">
+      <span class="label">Duration:</span>
+      <span class="months">4 Months</span>
+    </div>
+    <div class="category">Web Development</div>
+  </div>
+
+  <a href="./courses/python-full-stack-development.html" class="details-btn">
+    View Details →
+  </a>
+
+</div>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+<!-- ================= STATS ================= -->
+<section class="stats">
+  <h2>Why Choose Our Programs?</h2>
+  <p>Industry-focused curriculum with hands-on experience</p>
+
+  <div class="stats-grid">
+    <div><h3>500+</h3><span>Students Graduated</span></div>
+    <div><h3>95%</h3><span>Placement Rate</span></div>
+    <div><h3>50+</h3><span>Industry Partners</span></div>
+    <div><h3>4.8/5</h3><span>Average Rating</span></div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+ <footer class="footer">
+  <div class="footer-top">
+
+    <!-- About -->
+    <div class="footer-col">
+      <div class="footer-logo">
+        <span class="logo-box">ST</span>
+        <span class="brand-name">SoftTech Institute</span>
+      </div>
+
+      <p class="footer-text">
+        Empowering the next generation of software developers with
+        world-class training and industry-ready skills since 2021.
+      </p>
+
+      <ul class="footer-contact">
+  <li>
+    <ion-icon name="location-outline"></ion-icon>
+    <span>123 Tech Street, Bangalore 560001</span>
+  </li>
+  <li>
+    <ion-icon name="call-outline"></ion-icon>
+    <span>+91 98765 43210</span>
+  </li>
+  <li>
+    <ion-icon name="mail-outline"></ion-icon>
+    <span>info@softtech-institute.com</span>
+  </li>
+</ul>
+    </div>
+    <!-- Quick Links -->
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <a href="#">Home</a>
+      <a href="#">Programs</a>
+      <a href="#">About Us</a>
+      <a href="#">Blog</a>
+      <a href="#">Contact</a>
+      <a href="#">Career Services</a>
+    </div>
+
+    <!-- Popular Courses -->
+    <div class="footer-col">
+      <h4>Popular Courses</h4>
+      <a href="#">ReactJS Development</a>
+      <a href="#">Flutter Development</a>
+      <a href="#">MERN Stack</a>
+      <a href="#">Android Development</a>
+      <a href="#">Python Programming</a>
+      <a href="#">iOS Development</a>
+    </div>
+
+    <!-- Student Resources -->
+    <div class="footer-col">
+      <h4>Student Resources</h4>
+      <a href="#">Course Catalog</a>
+      <a href="#">Student Portal</a>
+      <a href="#">Study Materials</a>
+      <a href="#">Project Gallery</a>
+      <a href="#">Certification</a>
+      <a href="#">Alumni Network</a>
+    </div>
+
+  </div>
+
+  <!-- Newsletter -->
+  <div class="footer-newsletter">
+    <h4>Stay Updated</h4>
+    <p>Subscribe to our newsletter for the latest course updates and tech insights.</p>
+    <div class="newsletter-box">
+      <input type="email" placeholder="Enter your email">
+      <button>Subscribe</button>
+    </div>
+  </div>
+
+  <!-- Bottom -->
+     <div class="footer-bottom">
+   <div class="icons">
+    Follow Us
+    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+    <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+    <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+   </div>
+     <div class="copyright">
+      © 2026 SoftTech Institute. All rights reserved.
+      <a href="#">Privacy Policy</a> ·
+      <a href="#">Terms of Service</a> ·
+      <a href="#">Cookie Policy</a>
+    </div>
+  </div>
+</footer>
+</div>
+<script src="../assets/main.js"></script>
+<!-- Ionicons -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
